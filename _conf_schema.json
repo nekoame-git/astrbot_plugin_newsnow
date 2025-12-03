@@ -1,0 +1,27 @@
+{
+  "api_url": {
+    "type": "string",
+    "description": "NewsNow API 地址",
+    "hint": "部署 NewsNow 的 Docker 地址，例如 http://192.168.124.8:12444。必填。",
+    "default": ""
+  },
+  "whitelist": {
+    "type": "list",
+    "description": "群组白名单",
+    "hint": "填入群号。如果列表为空，则所有群组均可使用；如果填写了群号，则只有列表内的群组可以使用。",
+    "default": []
+  },
+  "sources": {
+    "type": "list",
+    "description": "启用的新闻源",
+    "hint": "允许查询的新闻源列表，不在列表中的源将被拒绝。",
+    "default": [
+      "zhihu", "weibo", "36kr", "ithome", "baidu", "bilibili",
+      "douyin", "tieba", "toutiao", "thepaper", "sspai", "coolapk",
+      "juejin", "tencent", "wallstreetcn", "cankaoxiaoxi", "hupu",
+      "v2ex", "acfun", "jianshu", "ifeng", "kaopu", "solidot",
+      "zaobao", "steam", "xueqiu", "jin10", "gelonghui", "linuxdo",
+      "ghxi", "hellogithub", "honkai", "starrail", "peopledaily"
+    ]
+  }
+}
