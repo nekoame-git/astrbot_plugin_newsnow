@@ -2,13 +2,25 @@
   "api_url": {
     "type": "string",
     "description": "NewsNow API 地址",
-    "hint": "部署 NewsNow 的 Docker 地址，例如 http://192.168.124.8:12444。必填。",
+    "hint": "部署 NewsNow 的 Docker 地址，例如 http://192.168.124.8:12444。必填，不填无法使用。",
     "default": ""
   },
   "whitelist": {
     "type": "list",
-    "description": "群组白名单",
-    "hint": "填入群号。如果列表为空，则所有群组均可使用；如果填写了群号，则只有列表内的群组可以使用。",
+    "description": "群组白名单 (必填)",
+    "hint": "⚠️ 注意：如果此列表为空，插件将不会响应任何群聊消息！请填入允许使用的群号。",
+    "default": []
+  },
+  "user_whitelist": {
+    "type": "list",
+    "description": "用户白名单",
+    "hint": "填入允许使用的用户QQ号。如果留空，则默认允许所有用户使用。",
+    "default": []
+  },
+  "user_blacklist": {
+    "type": "list",
+    "description": "用户黑名单",
+    "hint": "填入禁止使用的用户QQ号。优先级高于白名单，在黑名单中的用户将被拒绝响应。",
     "default": []
   },
   "sources": {
