@@ -1,4 +1,4 @@
-name: astrbot_plugin_newsnow
+name: 从newsnow获取新闻并推送
 version: 1.1.1
 author: YourName
 description: "从 NewsNow 获取实时热点新闻 (知乎/微博/36氪等)"
