@@ -23,10 +23,16 @@
     "hint": "填入禁止使用的用户QQ号。优先级高于白名单，在黑名单中的用户将被拒绝响应。",
     "default": []
   },
+  "scheduled_tasks": {
+    "type": "list",
+    "description": "每日定时推送任务 (使用 # 分隔)",
+    "hint": "格式: '时间#完整ID#新闻源'。请在群里发送 /sid 获取完整ID，完整复制UMO括号中的内容。例如: ['08:00#aiocqhttp:123456:1018132887#zhihu']",
+    "default": []
+  },
   "sources": {
     "type": "list",
     "description": "启用的新闻源",
-    "hint": "允许查询的新闻源列表，不在列表中的源将被拒绝。",
+    "hint": "允许查询的新闻源列表。",
     "default": [
       "zhihu", "weibo", "36kr", "ithome", "baidu", "bilibili",
       "douyin", "tieba", "toutiao", "thepaper", "sspai", "coolapk",
