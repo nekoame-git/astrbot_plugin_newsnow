@@ -1,0 +1,16 @@
+name: astrbot_plugin_newsnow
+version: 1.0.0
+author: YourName
+description: "从 NewsNow 获取实时热点新闻 (知乎/微博/36氪等)"
+url: "https://github.com/yourname/astrbot_plugin_newsnow"
+
+# 这里定义的内容会自动显示在 AstrBot 的插件配置界面
+config:
+  api_url:
+    type: string
+    default: "http://192.168.124.8:12444"
+    desc: "NewsNow 部署地址 (例如 http://192.168.124.8:12444)"
+  timeout:
+    type: number
+    default: 10
+    desc: "请求超时时间 (秒)"
